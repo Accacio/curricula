@@ -1,0 +1,372 @@
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{casual}
+\moderncvcolor{green} 
+\usepackage[portuguese,english]{babel}
+\usepackage{lipsum} 
+\usepackage{genealogytree}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage[top=1in, bottom=1.25in, left=1.25in, right=1.25in]{geometry} 
+% \usepackage[scale=0.7]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+\newif\ifportuguese
+\newif\iffrench
+\newif\ifenglish
+
+\newcommand{\portuguese}{\portuguesetrue \frenchfalse \englishfalse}
+\newcommand{\french}{\frenchtrue \portuguesefalse \englishfalse}
+\newcommand{\english}{\englishtrue \frenchfalse \portuguesefalse}
+
+\portuguese
+% \english
+% \french
+
+\newcommand\ml[3]{
+  \ifenglish {#1}\fi
+  \ifportuguese {#2}\fi
+  \iffrench {#3}\fi
+}
+% \ml{English}{Portuguese}{French}
+
+
+\firstname{\huge RAFAEL ACCÁCIO} % Your first name
+\familyname{NOGUEIRA} % Your last name
+
+
+\title{Curriculum Vitæ}
+% \address{1 rue Joliot-Curie Appartement EC310, Residence CÉSAL}
+% {Gif-sur-Yvette, Île de France, France}
+\email{rafaelaccacio.nogueira@supelec.fr}
+
+\extrainfo{\emailsymbol raccacio@poli.ufrj.br }
+\extrainfo{\centering \includegraphics[width=10pt]{pictures/GitHub-Mark-32px}
+  \httplink[Accacio]{github.com/Accacio} \qquad\hspace{-2pt}
+	$ \bullet $  \hspace{3pt}
+	  \emailsymbol raccacio@poli.ufrj.br }
+\mobile{+33~$\cdot$~07~$\cdot$~8285~$\cdot$~6409}
+%\phone{ }
+
+\homepage{accacio.github.io}{accacio.github.io} 
+
+\photo[70pt][0pt]{pictures/foto_4x5_2}
+%\quote{"A witty and playful quotation" - John Smith}
+
+
+
+\begin{document}
+
+\makecvtitle
+
+% Sections Names
+\newcommand\seceducation{\ml{Education}{Educação}{Éducation}}
+\newcommand\secexperience{\ml{Experience}{Experiência}{Expérience}}
+\newcommand{\secIT}{\ml{IT Competences}{Competências Informáticas}{Compétences
+    Informatiques}}
+\newcommand{\seclanguages}{\ml{Languages}{Línguas}{Languages}}
+\newcommand{\secprizes}{\ml{Prizes}{Prêmios e distinção}{Prix et distinction}}
+\newcommand{\secinterests}{\ml{Interests}{Interesses}{Intérêts}}
+
+\vspace{-40pt}
+\section{\seceducation}
+
+\cventry{\ml{}{set. 2017\newline Presente}{sept. 2017\newline  Présent}}
+{\ml{}{Master 2 Pesquisa em Eletrônica \newline Especialidade Sinal, Imagem,
+    Sistemas Embarcados e Controle}{Master Recherche Électronique \newline Spécialité Signal, Image, Systèmes Embarqués et Automatique}}
+{\ml{}{\newline Percurso Controle \newline CentraleSupélec/Université Rennes 1}{\newline Parcours Automatique \newline CentraleSupélec/Université Rennes 1}}
+{Rennes - France}{}{}
+
+\cventry{\ml{}{set. 2016\newline Presente}{sept. 2016\newline  Présent}}
+{\ml{}{Engenharia de Sistemas Automatisados - Formação Supélec}{Ingénierie des Systèmes Automatisés - Formation Supélec}}
+{\newline CentraleSupélec}{Île de France - \ml{France}{França}{France}}{}{}
+
+\cventry{\ml{}{abr. 2013\newline Presente}{avr. 2013\newline  Présent}}
+{\ml{}{Engenharia de Controle e Automação}{Ingénierie de Contrôle et d'Automatismes}}
+{\newline Universidade Federal do Rio de Janeiro}
+{\ml{}{Rio de Janeiro - Brasil}{Rio de Janeiro - Brésil}}{}{}  
+
+\cventry{\ml{}{abr. 2010\newline dez. 2012}{avr. 2010\newline  déc. 2012}}
+{\ml{}{Técnico em Eletrônica}{Technicien en Électronique}}
+{\newline Centro Federal de Ensino Tecnológico Celso Suckow da Fonseca}
+{\newline \ml{}{Rio de Janeiro - Brasil}{Rio de Janeiro - Brésil}}{}{}
+
+\cventry{\ml{}{abr. 2006\newline dez. 2012}{avr. 2006\newline  déc. 2012}}
+{\ml{}{Ensino Médio}{Enseignement secondaire}}
+{\newline Colégio Pedro II - Unidade Escolar Centro}
+{\ml{}{Rio de Janeiro - Brasil}{Rio de Janeiro - Brésil}}{}{}
+
+\section{\secexperience}
+
+% \cventry{\small 
+% \ml{}
+%  {abr. 2018 \newline ago. 2018 \newline 5 meses}
+%  {avr. 2018 \newline août 2018 \newline 5 mois}
+% }
+% {
+% \ml{}
+%  {Estágio Engenheiro 3º Ano - Fim de Estudos}{Stage Ingénieur $\mathbf{3^{ème}} $ Année - Fin d'études}
+% }
+%  {\newline DEA - IRMV - TECH. VEH. INTELLIGENT - Renault}
+ 
+% {\newline Technocentre Renault - Guyancourt - Île de France - France}
+
+% {\newline  
+% \ml{}
+%  {Desenvolvimento de sistema de supervisão para veículo autônomo}
+%  {Développement logiciel d'un système de supervision pour les véhicules autonomes}
+% }
+
+% {\ml
+%   {
+%     \begin{itemize}
+%     \item Interface ROS/Simulink using C++, Python and Matlab/Simulink
+%     \item State machine using Stateflow
+%     \end{itemize}
+%   }
+%   {
+%     \begin{itemize}
+%     \item Interface ROS/Simulink usando C++, Python e Matlab/Simulink
+%     \item Máquina de estados utilisando Stateflow
+%     \end{itemize}
+%   }
+%   {
+%     \begin{itemize}
+%     \item Interface ROS/Simulink utilisant C++, Python et Matlab/Simulink
+%     \item Machine à états utilisant Stateflow
+%     \end{itemize}
+% }
+% }
+
+              
+\cventry{
+\ml{}
+ {2017 - 2017\newline 2 meses}
+ {2017 - 2017\newline 2 mois}
+}
+{
+\ml{}
+{Estágio Engenheiro 2º Ano}{Stage Ingénieur $ \mathbf{2^{ème}} $ Année}
+}
+{\newline Institut d'Électronique et de Télécommunication de Rennes}
+{\newline 
+\ml{}
+{Rennes - França}
+{Rennes - France}
+}
+{\newline \ml{}{Estudo de Controle em tensão em redes des distribuição}{Étude des régulations en tension des réseaux
+  de distribution}}
+{\ml{}
+  {
+    \begin{itemize}
+    \item Simulações usando PowerFactory 
+    \item Interface entre PowerFactory e Simulink 
+    \item Automação das simulações com scripts em Python
+    \item Validação do controle
+    \end{itemize}
+  }
+  {
+    \begin{itemize}
+    \item Mise en \oe uvre de simulation sur PowerFactory 
+    \item Interface entre PowerFactory et Simulink 
+    \item Automatisation des simulations avec scripts en Python
+    \item Validation des régulations 
+    \end{itemize}
+  }
+}
+
+\cventry{\ml{}{2015 - 2016\newline 12 meses}{2015 - 2016\newline 12 mois}}
+{\ml{}{Iniciação Científica}{Initiation a recherche scientifique}}
+{\newline Laboratório de Processamento de Sinais e Imagens Médicas, UFRJ}
+{\newline \ml{}{Rio de Janeiro - Brasil}{Rio de Janeiro - Brésil}}
+{\ml{}{}{\newline Laboratoire de Traitement de Signals
+  et Imagerie médicale}}
+{\ml
+  {
+    \begin{itemize}
+    \item Modelisation et contrôle de servomoteurs
+    \item Traitement des Signaux
+    \end{itemize}
+  }
+  {
+    Criação de controle de segurança de movimento de braços robóticos prostéticos para
+    pacientes com atrofia muscular nos braços
+    \begin{itemize}
+    \item Modelagem et controle de servomotores
+    \item Processamento de Sinais
+    \end{itemize}
+  }
+  {
+    \begin{itemize}
+    \item Modelisation et contrôle de servomoteurs
+    \item Traitement des Signaux
+    \end{itemize}
+  }
+}
+
+\cventry{\ml{}{2014 - 2015\newline 12 meses}{2014 - 2015\newline 12 mois}}
+{\ml{}{Monitoria}{Tutorat}}
+{\newline Universidade Federal do Rio de Janeiro, UFRJ}
+{\newline \ml{}{Rio de Janeiro - Brasil}{Rio de Janeiro - Brésil}}
+{}
+{\ml
+  {
+    \begin{itemize}
+    \item Circuits logiques: 
+      \begin{itemize}
+      \item Algèbre de Boole
+      \item Fonctions logiques combinatoires et séquentielles 
+      \item Machines de Mealy et de Moore.
+      \end{itemize}
+    \end{itemize}
+  }
+  {
+    \begin{itemize}
+    \item Circuitos lógicos: 
+      \begin{itemize}
+      \item Algebra de Boole
+      \item Funções lógicas combinatórias e sequenciais 
+      \item Máquinas de Mealy e de Moore.
+      \end{itemize}
+    \end{itemize}
+  }
+  {
+    \begin{itemize}
+    \item Circuits logiques: 
+      \begin{itemize}
+      \item Algèbre de Boole
+      \item Fonctions logiques combinatoires et séquentielles 
+      \item Machines de Mealy et de Moore.
+      \end{itemize}
+    \end{itemize}
+  }
+}
+
+\cventry{\ml{}{2013 - 2013\newline 4 meses}{2013 - 2013\newline 4 mois}}
+{\ml{}{Estágio Técnico em Eletrônica}{Stage Technicien en Électronique}}
+{\newline Rede Globo - Matriz, TV GLOBO}
+{\newline \ml{}{Rio de Janeiro - Brasil}{Rio de Janeiro - Brésil}}
+{}
+{\ml
+  {
+    \begin{itemize}
+    \item Central de Transmissão e Recepção de Sinais - CTRS 
+      \begin{itemize}
+      \item Transmission et Réception de Signaux Audiovisuels par Satellites,\newline Fibres Optiques et Internet 
+      \item Traitement des Signaux\newline
+      \end{itemize}
+    \end{itemize}
+  }
+  {
+    \begin{itemize}
+    \item Central de Transmissão e Recepção de Sinais - CTRS
+      \begin{itemize}
+      \item Transmissão e Recepção de Sinais Audiovisuais por Satélites,\newline Fibra Óptica e Internet 
+      \item Processamento de Sinais Audiovisuais\newline
+      \end{itemize}
+    \end{itemize}
+  }
+  {
+    \begin{itemize}
+    \item Central de Transmissão e Recepção de Sinais - CTRS \newline {\em Centre de Transmission e Réception de Signals}
+      \begin{itemize}
+      \item Transmission et Réception de Signaux Audiovisuels par Satellites,\newline Fibres Optiques et Internet 
+      \item Traitement des Signaux\newline
+      \end{itemize}
+    \end{itemize}
+  }
+}
+
+%\vspace{40pt}
+\section{\secIT}
+
+\cvitem{\ml{Programming}{Programação}{Programmation}}{
+  C,
+  C++,
+  Java,
+  Python,
+  Matlab,
+  Wolfram Language,
+  \newline Fanuc's TP,
+  LADDER,
+  SQL,
+  Lisp,
+  C\#,
+  Assembly,
+  etc}
+
+\cvitem{\ml{Tools}{Ferramentas}{Outils}}{
+  Git,
+  Bash,
+  Emacs,
+  \LaTeX,
+  Tikz,
+  Simulink,
+  PowerFactory,
+  Step7,
+  ROS,
+  HTML,
+  SysML,
+  UML,
+  XML,
+  ESTEREL'S SCADE,
+  Fanuc's Rob}oguide,
+  SketchUp,
+  Trello,
+  Asana,
+  Gimp,
+  Photoshop
+  etc
+
+
+\cvitem{\ml{Operating Systems}{Sistemas Operacionais}{Systèmes d'exploitation}}{
+  Linux et Windows
+}
+
+\section{\seclanguages}
+\newcommand{\raz}{\ml{}{Razoavelmente\hspace{1.2cm}}{Décemment\hspace{1.2cm}}}
+\newcommand{\bem}{\ml{}{Bem\hspace{2.4cm}}{Bien\hspace{2.4cm}}}
+\newcommand{\pouco}{\ml{}}{{Pouco\hspace{2.15cm}}{Peu\hspace{2.5cm}}}
+\newcommand{\nativo}{\ml{}{Nativo\hspace{2.05}{cm}}{Natif\hspace{2.31cm}}}
+
+% \cvitem{decente}{\raz \raz \raz \raz}{}
+\ml{
+  
+
+  \cvitem{}{Compreende \hspace{1.1cm}Fala \hspace{2.35cm} Lê\hspace{2.7cm} Escreve }{}
+
+\cvitem{}{Comprend \hspace{1.455cm}Parle \hspace{2.17cm} Lit\hspace{2.650cm} Écrit }{}
+
+
+\cvitem{\ml{Portuguese}{Português}{Portugais}}{\nativo \nativo \nativo \nativo}{}
+
+\cvitem{\ml{French}{Francês}{Français}}{\bem \bem \bem \raz}{}
+
+\cvitem{\ml{German}{Alemão}{Allemand}}{\pouco \pouco \pouco \pouco}{}
+
+\cvitem{\ml{English}{Inglês}{Anglais}}{\bem \bem \bem \bem}{}
+
+\section{\secprizes}
+
+\cvitem{\ml{}{Bolsas}{Bourse}}
+{\ml{}{Bolsa Duplo Diploma BRAFITEC CAPES}{Double Diplôme BRAFITEC CAPES}}
+
+\cvitem{\ml{}{3º Lugar}{3ème Place}}
+{\ml{}{Olimpíadas de Robótica Industrial - FANUC - França}{Olympiades de la Robotique Industrielle - FANUC France}}
+
+\cvitem{\ml{}{M. Honrosa}{M. Honorable}}
+{\ml{}{Olimpíadas Brasileiras de Matemática para Escolas Públicas - OBMEP}{Olympiades Brésiliennes des Mathematique des Écoles Publiques}}
+
+\section{\secinterests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{\ml{}{Programação}{Programmation}}{\ml{}{Criação de Jogos}{Création de Jeux Vidéo}}
+\cvlistdoubleitem{\ml{}{Automobilismo}{Automobilisme}}{\ml{}{Aeronáutica}{Aéronautique}}
+\cvlistdoubleitem{\ml{}{Robótica}{Robotique}}{\ml{}{Controle}{Automatique}}
+\cvlistdoubleitem{\ml{}{Processamento de Sinais}{Traitement des Signaux}}{\ml{}{Prostéticos}{Appareils Prothétiques}}
+\cvlistdoubleitem{\ml{}{Acústica}{Acoustique}}{\ml{}{Eletrônica}{Électronique}}
+
+\end{document}

@@ -1,0 +1,156 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{darkgreen} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\usepackage[french]{babel}
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+\usepackage{genealogytree}
+\usepackage{color}
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{RAFAEL ACCÁCIO} % Your first name
+\familyname{NOGUEIRA} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Curriculum Vitae}
+\address{Rua Petrolândia 116  Apartamento 101, Vista Alegre}{Rio de Janeiro, RJ, Brasil}
+\mobile{+55~$\cdot$~21~$\cdot$~98105~$\cdot$~8334}
+\phone{+55~$\cdot$~21~$\cdot$~2146~$\cdot$~2635}
+\email{raccacio@poli.ufrj.br}
+%\homepage{accacio.co.nr}{accacio.co.nr} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+\extrainfo{ \gtrsymBorn~04/10/1995}
+\photo[70pt][0pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Educação}
+
+\cventry{Abril 2013 - Presente}{Bacharelado em Engenharia de Controle e Automação}{\newline Universidade Federal do Rio de Janeiro}{Rio de Janeiro}{\textit{CRA -- 7.5}}{}  % Arguments not required can be left empty
+%----------------------------------------------------------------------------------------
+\cventry{Abril 2010 - Dezembro 2012}{Técnico em  Eletrônica}{\newline Centro Federal de Ensino Tecnológico Celso Suckow da Fonseca}{Rio de Janeiro}{}{}
+%----------------------------------------------------------------------------------------
+\cventry{Abril 2006 - Dezembro 2012}{Ensino médio}{\newline Colégio Pedro II - Unidade Escolar Centro}{Rio de Janeiro}{}{}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experiência}
+
+%\subsection{Vocational}
+\cventry{2015 - Presente}{Iniciação Científica}{\newline Laboratório de Processamento de Sinais e Imagens Médicas, UFRJ}{Rio de Janeiro}{}
+{\begin{itemize}
+\item Modelagem e controle de servomotores
+\item Processamento de Sinais
+\end{itemize}}
+%----------------------------------------------------------------------------------------
+\cventry{2014 - 2015}{Monitor}{\newline Universidade Federal do Rio de Janeiro, UFRJ}{Rio de Janeiro}{}{\begin{itemize}
+\item Circuitos Lógicos: 
+\begin{itemize}
+\item Álgebra de Boole
+\item Funções, lógicas combinatórias et sequenciais 
+\item Máquinas de Mealy e de Moore.
+\end{itemize}
+\end{itemize}}
+
+
+%----------------------------------------------------------------------------------------
+\cventry{2014 - 2015}{Estagiário Técnico em Eletrônica}{\newline Rede Globo - Matriz, TV GLOBO}{Rio de Janeiro}{}{\begin{itemize}
+\item Central de Transmissão e Recepção de Sinais - CTRS
+\begin{itemize}
+\item Transmissão et Recepção de Sinais Audiovisuais por Satélites,\newline Fibras Ópticas e Internet 
+\item  Processamento de Sinais
+\end{itemize}
+\end{itemize}}
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Competências Informáticas}
+
+\cvitem{Programação}{C, C++, Python, Assembly, Matlab, Wolfram Language, etc}
+\cvitem{Ferramentas}{Git, Bash, Vim, \LaTeX, HTML, XML, etc}
+\cvitem{Sistemas Operacionais}{Linux (Ubuntu) e Windows }
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Idiomas}
+\newcommand{\raz}{Razoavelmente\hspace{1.2cm}}
+\newcommand{\bem}{Bem\hspace{2.85cm}}
+\newcommand{\pouco}{Pouco\hspace{2.6cm}}
+\newcommand{\nativo}{Nativo\hspace{2.525cm}}
+
+
+\cvitem{}{Compreende \hspace{1.5cm}Fala \hspace{2.7cm} Lê\hspace{3.0cm} Escreve }{}
+
+\cvitem{Português}{\nativo \nativo \nativo \nativo}{}
+
+\cvitem{Francês}{\raz \raz \bem \raz}{}
+
+\cvitem{Alemão}{\pouco \pouco \raz \pouco}{}
+
+\cvitem{Inglês}{\bem \bem \bem \bem}{}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interesses}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Robótica}{Eletrônica}
+\cvlistdoubleitem{Automação}{Programação}
+\cvlistdoubleitem{Automobilismo}{Aeronáutica}
+\cvlistdoubleitem{Criação de video-jogos}{Acústica}
+\cvlistdoubleitem{Aparelhos Prostéticos}{Processamento de Sinais Audio-visuais}
+
+\end{document}
