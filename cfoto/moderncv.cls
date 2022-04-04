@@ -173,7 +173,7 @@
 % TODO (?): replace all \newcommand by \NewDocumentCommand
 
 % micro-typography (e.g., character protrusion, font expansion, hyphenatable letterspacing)
-\RequirePackage{microtype}
+% \RequirePackage{microtype}
 
 % compatibility package with older versions of moderncv
 \RequirePackageWithOptions{moderncvcompatibility}
