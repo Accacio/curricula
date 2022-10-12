@@ -29,18 +29,16 @@
 % \english
 \french
 
-\newcommand\ml[3]{
-  \ifenglish    {#1}\fi
+\newcommand\ml[3]{\ifenglish    {#1}\fi
   \ifportuguese {#2}\fi
-  \iffrench     {#3}\fi
-}
+  \iffrench     {#3}\fi}
 % \ml{English}{Portuguese}{French}
 
-\newcommand{\now}{
+\newcommand{\now}{%
   \ml
   {(ongoing)}
   {(em curso)}
-  {(en cours)}
+  {(en cours)}%
 }
 
 \firstname{\huge RAFAEL ACCÁCIO} % Your first name
@@ -66,36 +64,34 @@
 \begin{document}
 
 \makecvtitle%
-
+\newcommand{\feb}{\ml{feb}{fev.}{fev.}}
+\newcommand{\apr}{\ml{apr}{abr.}{avr.}}
+\newcommand{\jun}{\ml{jun}{jun.}{juin}}
+\newcommand{\jul}{\ml{july}{jul.}{juil.}}
+\newcommand{\aug}{\ml{aug}{ago.}{août}}
+\newcommand{\sep}{\ml{sep}{set.}{sept.}}
+\newcommand{\oct}{\ml{oct}{out.}{oct.}}
+\newcommand{\nov}{\ml{nov}{nov.}{nov.}}
+\newcommand{\dec}{\ml{dec}{dez.}{déc.}}
+\newcommand{\france}{\ml{France}{França}{France}}
+\newcommand{\brazil}{\ml{Brazil}{Brasil}{Brésil}}
 
 \section{\ml{Education}{Educação}{Études}}
 
-
-\cventry{
-  \ml%
-  {Nov. 2019 \newline  dec. 2022 \newline}
-  {nov. 2019 \newline dez. 2022 \newline}
-  {nov. 2019 \newline  dec. 2022 \newline}
-  \now
+\cventry{\nov{} 2019 \newline\dec{} 2022
 }
 {
   \ml%
   {Ph.D in Automatic Control}
   {Doutorado em Controle Automático}
   {Doctorat en Automatique}%
+  \ \now%
 }
-{\ml%
-  {\newline CentraleSupélec/Université Rennes 1}
-  {\newline CentraleSupélec/Université Rennes 1}
-  {\newline CentraleSupélec/Université Rennes 1}%
+{\newline CentraleSupélec/Université Rennes 1%
 }
-{\newline Rennes,\ml{France}{França}{France}}{}{}
+{Rennes}{\france}{}
 
-\cventry{
-  \ml%
-  {Sept. 2017 \newline  Sept. 2018 \newline}
-  {set. 2017 \newline set. 2018 \newline}
-  {sept. 2017 \newline  sept. 2018 \newline}
+\cventry{\sep{} 2017 \newline \sep{} 2018
 }
 {
   \ml%
@@ -105,19 +101,13 @@
   {Master Recherche Électronique - Signal, Image, Systèmes Embarqués et Automatique}%
 }
 {\ml%
-  {Control Path
-    \newline CentraleSupélec/Université Rennes 1}
-  {Percurso Controle
-    \newline CentraleSupélec/Université Rennes 1}
-  {Parcours Automatique \newline CentraleSupélec/Université Rennes 1}%
+  {Control Path}
+  {Percurso Controle}
+  {Parcours Automatique}\newline CentraleSupélec/Université Rennes 1%
 }
-{\newline Rennes,\ml{France}{França}{France}}{}{}
+{Rennes}{\france}{}
 
-\cventry{
-  \ml%
-  {Sept. 2016\newline Sept. 2018\newline}
-  {set. 2016\newline set. 2018\newline}
-  {sept. 2016\newline sept. 2018\newline}
+\cventry{\sep{} 2016\newline \sep{} 2018
 }
 {
   \ml%
@@ -125,13 +115,10 @@
   {Engenharia de Sistemas Automatisados - Formação Supélec}
   {Ingénierie des Systèmes Automatisés - Formation Supélec}}
 {\newline CentraleSupélec}
-{\newline Île de France,\ml{France}{França}{France}}{}{}
+{Rennes}{\france}{}
 
 \cventry{
-  \ml%
-  {apr. 2013\newline jul. 2019 \newline}
-  {abr. 2013\newline jul. 2019 \newline}
-  {avr. 2013\newline jul. 2019\newline}
+  \apr{} 2013\newline \dec{} 2019
 }
 {
   \ml%
@@ -139,13 +126,9 @@
   {Engenharia de Controle e Automação}
   {Ingénierie de Contrôle et d'Automatismes}}
 {\newline Universidade Federal do Rio de Janeiro}
-{\newline Rio de Janeiro,\ml{Brazil}{Brasil}{Brésil}}{}{}
+{Rio de Janeiro}{\brazil}{}
 
-\cventry{
-  \ml%
-  {apr. 2010\newline dec. 2012\newline}
-  {abr. 2010\newline dez. 2012\newline}
-  {avr. 2010\newline  déc. 2012\newline}
+\cventry{\apr{} 2010\newline \dec{} 2012
 }
 {
   \ml%
@@ -153,21 +136,21 @@
   {Técnico em Eletrônica}
   {Technicien en Électronique}}
 {\newline Centro Federal de Ensino Tecnológico Celso Suckow da Fonseca}
-{\newline Rio de Janeiro,\ml{Brazil}{Brasil}{Brésil}}{}{}
+{\newline Rio de Janeiro}{\brazil}{}
 
-% \cventry{
-%   \ml
-%   {}
-%   {abr. 2006\newline dez. 2012\newline}
-%   {avr. 2006\newline  déc. 2012\newline}
-% }
-% {
-%   \ml
-%   {}
-%   {Ensino Fundamental e Médio}
-%   {Enseignement secondaire}}
-% {\newline Colégio Pedro II - Unidade Escolar Centro}
-% {\ml{}{Rio de Janeiro - Brasil}{Rio de Janeiro - Brésil}}{}{}
+\cventry{
+  \ml
+  {}
+  {abr. 2006\newline dez. 2012\newline}
+  {avr. 2006\newline  déc. 2012\newline}
+}
+{
+  \ml
+  {Elementary and High School}
+  {Ensino Fundamental e Médio}
+  {Enseignement secondaire}}
+{\newline Colégio Pedro II - Unidade Escolar Centro}
+{Rio de Janeiro}{\brazil}{}
 
 \section{
   \ml%
@@ -176,12 +159,8 @@
   {Expérience Professionnelle}
 }
 
-\cventry{
-  \small
-  \ml%
-  {oct. 2018 \newline feb. 2019\newline 5 months\newline}
-  {out. 2018 \newline fev. 2019\newline 5 meses\newline}
-  {oct. 2018 \newline fév. 2019\newline 5 mois\newline}}
+\cventry{\oct{} 2018\newline \feb{} 2019
+}
 {
   \ml%
   {Engineering Intership}
@@ -220,12 +199,8 @@
 }
 }
 
-\cventry{
-  \small
-  \ml%
-  {apr. 2018 \newline aug. 2018 \newline 5 months\newline}
-  {abr. 2018 \newline ago. 2018 \newline 5 meses\newline}
-  {avr. 2018 \newline août 2018 \newline 5 mois\newline}}
+\cventry{\apr{} 2018 \newline \aug{} 2018
+}
 {
   \ml%
   {Engineering Internship}
@@ -259,12 +234,8 @@
 }
 }
 
-\cventry{
-  \small
-  \ml%
-  {nov. 2017 \newline apr. 2018 \newline 6 months\newline}
-  {nov. 2017 \newline abr. 2018 \newline 6 meses\newline}
-  {nov. 2017 \newline avr. 2018 \newline 6 mois\newline}}
+\cventry{\nov{} 2017 \newline \apr{} 2018
+}
 {
   \ml%
   {Industrial Study Project}
@@ -278,14 +249,13 @@
   {Desenvolvimento e validação de um autômato para otimizar a inserção
     de Energias Renováveis}
   {Développement et validation d'un automate pour optimiser
-    l'insertion des ENRs (Énergie Renouvelables)}}
+    l'insertion des Énergies Renouvelables}}
 {}
 
 
 \cventry{
-\ml{july 2017 \newline aug. 2017 \newline 2 months\newline}
- {jul. 2017 \newline ago. 2017 \newline 2 meses\newline}
- {juil. 2017 \newline août 2017 \newline 2 mois\newline}}
+  \jul{} 2017 \newline \aug{} 2017 \newline
+}
 {
   \ml
   {Engineering Internship}
@@ -325,63 +295,53 @@
   }
 }
 
-\cventry{
-  \ml
-  {aug. 2015 \newline june 2016\newline 11 months\newline}
-  {ago. 2015 \newline jun. 2016\newline 11 meses\newline}
-  {août 2015 \newline juin 2016\newline 11 mois\newline}}
+\cventry{\aug{} 2015 \newline \jun{} 2016
+}
 {
   \ml
   {Scientific Initiation}
   {Iniciação Científica}
   {Initiation a la recherche scientifique}}
 {\newline Laboratório de Processamento de Sinais e Imagens Médicas, UFRJ}
-{\newline Rio de Janeiro,\ml{Brazil}{Brasil}{Brésil}}
-{}
+{\newline Rio de Janeiro}
+{\brazil}
 {
   \ml
   { Design of Secure Control for prosthetic robotic arm for muscle atrophy
     suffering patients
     \begin{itemize}
-    \item Modeling and servomotors control
-    \item Signal Processing
+      \item Modeling and servomotors control
+      \item Signal Processing
     \end{itemize}
   }
   {
     Criação de controle de segurança de movimento de braços robóticos prostéticos para
     pacientes com atrofia muscular nos braços
     \begin{itemize}
-    \item Modelagem et controle de servomotores
-    \item Processamento de Sinais
+      \item Modelagem et controle de servomotores
+      \item Processamento de Sinais
     \end{itemize}
   }
   { Création de contrôle sécurisé pour le mouvement d'un bras prosthétique
     robotique pour des patients soufrant d'atrophie musculaire
     \begin{itemize}
-    \item Modelisation et contrôle de servomoteurs
-    \item Traitement des Signaux
+      \item Modelisation et contrôle de servomoteurs
+      \item Traitement des Signaux
     \end{itemize}
   }
 }
 
 
-\cventry{
-  \ml
-  {}
-  {abr. 2013 - set. 2013\newline 6 meses\newline}
-  {avr 2013 - sept. 2013\newline 6 mois\newline}}
+\cventry{\apr{} 2013\newline \sep{} 2013
+}
 {
   \ml
   {}
   {Estágio Técnico em Eletrônica}
   {Stage Technicien en Électronique}}
 {\newline Rede Globo - Matriz, TV GLOBO}
-{\newline
-  \ml
-  {}
-  {Rio de Janeiro - Brasil}
-  {Rio de Janeiro - Brésil}}
-{}
+{Rio de Janeiro}
+{\brazil}
 {\ml
   {
     \begin{itemize}
@@ -422,168 +382,102 @@
   {Enseignement}
 }
 
-\newcommand{\sep}{\ml{sep}{set.}{sept.}}
-\newcommand{\apr}{\ml{apr}{abr.}{avr}}
-\newcommand{\france}{\ml{France}{França}{France}}
-\cventry{2021 \\(6h)}
+
+\cventry{2022}
 {
   \ml
   {Tutoring}
   {Laboratório Automatique 2A}
-  {TP Automatique 2A}}
-{CentraleSupélec}
-{\newline Rennes, \france}
+  {TP Analyse et commande dans l'espace d'état 2A} (30h)}
+{\newline ECAM}
+{Rennes}
+{\france}
 {}
-{
-}
 
-\cventry{2022 \\(30h)}
+\cventry{2022}
 {
   \ml
   {Tutoring}
   {Laboratório Automatique 2A}
-  {TP Analyse et commande dans l'espace d'état 2A}}
-{ECAM}
-{\newline Rennes, \france}
+  {TP Commande Prédictive pour bâtiment intelligent 2A}  (15h)}
+{\newline CentraleSupélec}
+{Rennes}
+{\france}
 {}
-{
-  \ml
-  {
-  }
-  {
-  }
-  {
-  }
-}
 
-\cventry{2022 \\(18h)}
+\cventry{2022}
 {
   \ml
   {Tutoring}
   {Laboratório Automatique 2A}
-  {TP Asservissements 2A}}
-{ECAM}
-{\newline Rennes, \france}
+  {TP Asservissements 2A} (18h)}
+{\newline ECAM}
+{Rennes}
+{\france}
 {}
-{
-  \ml
-  {
-  }
-  {
-  }
-  {
-  }
-}
 
-\cventry{2022 \\(15h)}
+\cventry{2022}
 {
   \ml
   {Tutoring}
   {Laboratório Automatique 2A}
-  {TP Commande Prédictive pour bâtiment intelligen 2A}}
-{CentraleSupélec}
-{\newline Rennes, \france}
+  {TP Commande Prédictive 3A} (12h)}
+{\newline CentraleSupélec}
+{Rennes}
+{\france}
 {}
-{
-  \ml
-  {
-  }
-  {
-  }
-  {
-  }
-}
 
-
-\cventry{2022 \\(12h)}
+\cventry{2021}
 {
   \ml
   {Tutoring}
   {Laboratório Automatique 2A}
-  {TP Commande Prédictive 3A}}
-{CentraleSupélec}
-{\newline Rennes, \france}
+  {TP Commande Prédictive 3A} (12h)}
+{\newline CentraleSupélec}
+{Rennes}
+{\france}
 {}
-{
-  \ml
-  {
-  }
-  {
-  }
-  {
-  }
-}
 
-\cventry{2021 \\(12h)}
+\cventry{2021}
+{\ml
+  {Tutoring}
+  {Laboratório Automatique 2A}
+  {TP Automatique 2A}
+(6h)}
+{\newline CentraleSupélec}{Rennes}{\france}{}
+
+\cventry{2021}
 {
   \ml
   {Tutoring}
   {Laboratório Automatique 2A}
-  {TP Commande Prédictive 3A}}
-{CentraleSupélec}
-{\newline Rennes, \france}
+  {Projet Optimisation pour Microgrid isolé} (10h)}
+{\newline CentraleSupélec}
+{Rennes}
+{\france}
 {}
-{
-  \ml
-  {
-  }
-  {
-  }
-  {
-  }
-}
 
-\cventry{2021 \\(10h)}
+\cventry{2020}
 {
   \ml
   {Tutoring}
   {Laboratório Automatique 2A}
-  {Projet Optimisation pour Microgrid isolé}}
-{CentraleSupélec}
-{\newline Rennes, \france}
+  {TP Automatique 2A} (18h)}
+{\newline CentraleSupélec}
+{Rennes}
+{\france}
 {}
-{
-  \ml
-  {
-  }
-  {
-  }
-  {
-  }
-}
 
-\cventry{2020 \\(18h)}
-{
-  \ml
-  {Tutoring}
-  {Laboratório Automatique 2A}
-  {TP Automatique 2A}}
-{CentraleSupélec}
-{\newline Rennes, \france}
-{}
-{
-  \ml
-  {
-  }
-  {
-  }
-  {
-  }
+\cventry{\jul{} 2014\newline \jul{} 2015
 }
-
-\cventry{
-  \ml
-  {july 2014 \newline july 2015\newline 13 months\newline}
-  {jul. 2014 \newline juil. 2015\newline 13 meses\newline}
-  {juil. 2014 \newline juil. 2015\newline 13 mois\newline}}
 {
   \ml
   {Tutoring}
   {Monitoria}
-  {Tutorat}}
-{\newline Universidade Federal do Rio de Janeiro, UFRJ}
-{\newline Rio de Janeiro,\ml{Brazil}{Brasil}{Brésil}}
-{}
+  {Tutorat} (450h)}
+{\newline Universidade Federal do Rio de Janeiro}
+{Rio de Janeiro}
+{\brazil}
 {
   \ml
   {
@@ -625,7 +519,7 @@
 }
 
 \cventry{2022}
-{Expectation-Maximization Based Defense Mechanism for dMPC}
+{Expectation-Maximization based defense mechanism for dMPC}
 {}
 {}{}{9th IFAC Conference on Networked Systems NECSYS 2022\\\url{https://doi.org/10.1016/j.ifacol.2022.07.238}}
 
@@ -635,7 +529,7 @@
 {}{}{5th Conference on Control and Fault-Tolerant SYSTOL 2021\\\url{https://doi.org/10.1109/SysTol52990.2021.9595927}}
 
 \cventry{2019}
-{Identification Of A Mechatronic System}
+{Identification of a mechatronic system}
 {}
 {}{}{Bachelor Thesis\\\url{http://repositorio.poli.ufrj.br/monografias/monopoli10029376.pdf}}
 
@@ -830,6 +724,20 @@
 }
 
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+\cvlistdoubleitem
+{
+  \ml
+  {}
+  {Controle}
+  {Automatique}
+}
+{
+  \ml
+  {}
+  {Robótica}
+  {Robotique}
+}
+
 
 \cvlistdoubleitem{
   \ml
@@ -859,19 +767,6 @@
   {}
   {Aeronáutica}
   {Aéronautique}
-}
-
-\cvlistdoubleitem{
-  \ml
-  {}
-  {Robótica}
-  {Robotique}
-}
-{
-  \ml
-  {}
-  {Controle}
-  {Automatique}
 }
 
 \cvlistdoubleitem{
