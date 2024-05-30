@@ -48,8 +48,8 @@
 \newcommand{\english}{\englishtrue \frenchfalse \portuguesefalse}
 
 % \portuguese
-% \english
-\french
+\english
+% \french
 
 \newcommand\ml[3]{\ifenglish    {#1}\fi
   \ifportuguese {#2}\fi
@@ -102,7 +102,9 @@
 \newcommand{\personalinfo}{\ml{Personnal Information}{Informação Pessoal}{Informations personnelles}}
 \newcommand{\education}{\ml{Education}{Educação}{Études}}
 \newcommand{\contact}{\ml{Contact}{Contato}{Adresses et Contact}}
+\newcommand{\supervisor}{\ml{\textbf{Supervisor:}}{\textbf{Diretor:}}{\textbf{Directeur:}}}
 
 \input{common}
 
 \end{document}
+
