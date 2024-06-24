@@ -24,7 +24,7 @@
 
 \moderncvstyle{casual}
 \moderncvcolor{green}
-\usepackage[portuguese,english]{babel}
+\usepackage[french]{babel}
 \usepackage{lipsum}
 \usepackage{genealogytree}
 \usepackage{xcolor}
@@ -38,22 +38,15 @@
 
 \addtolength{\footskip}{20pt}
 
-\newif\ifportuguese
-\newif\iffrench
-\newif\ifenglish
-
-% TODO(accacio): improve this logic
-\newcommand{\portuguese}{\portuguesetrue \frenchfalse \englishfalse}
-\newcommand{\french}{\frenchtrue \portuguesefalse \englishfalse}
-\newcommand{\english}{\englishtrue \frenchfalse \portuguesefalse}
-
-% \portuguese
-\english
-% \french
-
-\newcommand\ml[3]{\ifenglish    {#1}\fi
-  \ifportuguese {#2}\fi
-  \iffrench     {#3}\fi}
+\ExplSyntaxOn
+\newcommand\ml[3]{
+  \str_case_e:nnF { \expandafter\languagename } {
+   {english}{#1}
+   {portuguese}{#2}
+   {french}{#3}
+  }{}%
+}
+\ExplSyntaxOff
 % \ml{English}{Portuguese}{French}
 
 \newcommand{\now}{%
